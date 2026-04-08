@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoursePlanner - Team</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #eef2f7;
+    color: #333;
+}
+
+/* HEADER (NOW SAME AS FOOTER) */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px 40px;
+}
+
+/* FLEX HEADER (LOGO LEFT + TEXT) */
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-content img {
+    width: 50px;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.header-text p {
+    margin: 2px 0;
+    font-size: 0.95em;
+}
+
+/* MAIN CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* TEAM CARDS */
+.team-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    border-left: 4px solid #2c3e50;
+}
+
+.team-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* BLACK LINKS */
+.team-info a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.team-info a:hover {
+    text-decoration: underline;
+}
+
+.role {
+    font-weight: bold;
+    color: #555;
+}
+
+/* SMALL ACK BOX */
+.ack-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 8px 12px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    max-width: 400px;
+}
+
+.ack-text {
+    max-width: 70%;
+    font-size: 0.75em; /* SMALLER TEXT */
+}
+
+.ack-logo img {
+    width: 50px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="images/courseplanner-logo.png" alt="Logo">
+
+        <div class="header-text">
+            <h1>CoursePlanner</h1>
+            <p>Capstone Project – Group 4</p>
+            <p>
+                A web-based solution designed to help users organize tasks, manage schedules, 
+                and improve productivity.
+            </p>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+
+    <h2>Meet Our Team</h2>
+
+    <!-- Project Manager -->
+    <div class="team-card">
+        <img src="images/zongtao.jpg">
+        <div class="team-info">
+            <a href="https://linkedin.com/in/zongtao-wei-3889b930a" target="_blank">Zongtao Wei</a>
+            <div class="role">Project Manager</div>
+            <p>Led the team and managed timelines.</p>
+        </div>
+    </div>
+
+    <!-- Jiya -->
+    <div class="team-card">
+        <img src="images/jiya.jpg">
+        <div class="team-info">
+            <a href="https://www.linkedin.com/in/jiya-075a5734a" target="_blank">Jiya</a>
+            <div class="role">Security Manager</div>
+            <p>Handled system security and deployment safety.</p>
+        </div>
+    </div>
+
+    <!-- Angel -->
+    <div class="team-card">
+        <img src="images/angel.jpg">
+        <div class="team-info">
+            <a href="https://linkedin.com/in/angel-varghese-1257a2340" target="_blank">Angel</a>
+            <div class="role">CI/CD Engineer</div>
+            <p>Managed automated build and deployment pipelines.</p>
+        </div>
+    </div>
+
+    <!-- Sargun -->
+    <div class="team-card">
+        <img src="images/sargun.jpeg">
+        <div class="team-info">
+            <a href="https://linkedin.com/in/sargun-kaur-benipal-06889127b" target="_blank">Sargun Kaur Benipal</a>
+            <div class="role">Cloud Engineer</div>
+            <p>Handled cloud infrastructure and deployment.</p>
+        </div>
+    </div>
+
+    <!-- Acknowledgement -->
+    <h2 class="ack-title">Acknowledgement</h2>
+    <div class="ack-box">
+        <div class="ack-text">
+            A special thanks to our instructor, <strong>Mehdi Shokrani</strong> and our mentor, <strong>Fernando Horta</strong>, for their guidence  and support.
+        </div>
+
+        <div class="ack-logo">
+            <img src="images/sait-logo.jpg">
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>CoursePlanner © 2026 | Group 4</p>
+</footer>
+
+</body>
+</html>
